@@ -10,7 +10,7 @@
 </head>
 <body>
   <header>
-    <h1>Shadrack's sari sari store</h1>
+    <h1>ShopeeMall</h1>
     <nav>
       <ul class="nav">
         <li>Notification</li>
@@ -24,11 +24,11 @@
   <div class="container">
   <img src=""  class="output" alt="">
   <div>
-  <img src="https://down-ph.img.susercontent.com/file/b88075343deaf5ba7573d857d44036da" class="img" alt="" onmouseover="changeText(this)">
-  <img class="img" onmouseover="changeText(this)" src="https://down-ph.img.susercontent.com/file/96e63e6f96474c75216f84a25d91ff0e">
-  <img class="img" onmouseover="changeText(this)" src="https://down-ph.img.susercontent.com/file/3b39badcb1d23da33c5bafa0d73020b1">
-  <img class="img" onmouseover="changeText(this)" src="https://down-ph.img.susercontent.com/file/1df3409d6c9573edfbf1721e1a678fcf">
-  <img class="img" onmouseover="changeText(this)" src="https://down-ph.img.susercontent.com/file/c3f6139836c33cee1f208abd48828910">
+  <img src="https://down-ph.img.susercontent.com/file/b88075343deaf5ba7573d857d44036da" class="img" alt="" onmouseover="changeIphone(this)">
+  <img class="img" onmouseover="changeIphone(this)" src="https://down-ph.img.susercontent.com/file/96e63e6f96474c75216f84a25d91ff0e">
+  <img class="img" onmouseover="changeIphone(this)" src="https://down-ph.img.susercontent.com/file/3b39badcb1d23da33c5bafa0d73020b1">
+  <img class="img" onmouseover="changeIphone(this)" src="https://down-ph.img.susercontent.com/file/1df3409d6c9573edfbf1721e1a678fcf">
+  <img class="img" onmouseover="changeIphone(this)" src="https://down-ph.img.susercontent.com/file/c3f6139836c33cee1f208abd48828910">
 </div>
 </div>
 
@@ -37,22 +37,24 @@
     <h2>₱21,890 - ₱28,890</h2>
     <div class="color">
       <p>Color</p>
-      <button onmouseover="changeImage(this)" src="https://down-ph.img.susercontent.com/file/4eda37751f332552b7dff3ded575525e">Black</button>
-      <button onmouseover="changeImage(this)" src="https://down-ph.img.susercontent.com/file/ae765a6a0464cce22a774b738fc2d267">Blue</button>
-      <button onmouseover="changeImage(this)" src="https://down-ph.img.susercontent.com/file/fda85005e201ec1c9a2be21c777d4dec">Green</button>
-      <button onmouseover="changeImage(this)" src="https://down-ph.img.susercontent.com/file/dc84c2089c9f94c9072bce211f0fbada">White</button>
-      <button onmouseover="changeImage(this)" src="https://down-ph.img.susercontent.com/file/c3f6139836c33cee1f208abd48828910">Purple</button>
-      <button onmouseover="changeImage(this)" src="https://down-ph.img.susercontent.com/file/bea7ef9db07f2bcd359d953a8f96fccd">Red</button>
+      <button onmouseover="changeImage(this)" src="https://down-ph.img.susercontent.com/file/4eda37751f332552b7dff3ded575525e" onclick="btnClick('black')" class="black">Black</button>
+      <button onmouseover="changeImage(this)" src="https://down-ph.img.susercontent.com/file/ae765a6a0464cce22a774b738fc2d267" onclick="btnClick('blue')" class="blue">Blue</button>
+      <button onmouseover="changeImage(this)" src="https://down-ph.img.susercontent.com/file/fda85005e201ec1c9a2be21c777d4dec" onclick="btnClick('green')" class="green">Green</button>
+      <button onmouseover="changeImage(this)" src="https://down-ph.img.susercontent.com/file/dc84c2089c9f94c9072bce211f0fbada" onclick="btnClick('white')" class="white">White</button>
+      <button onmouseover="changeImage(this)" src="https://down-ph.img.susercontent.com/file/c3f6139836c33cee1f208abd48828910" onclick="btnClick('purple')" class="purple">Purple</button>
+      <button onmouseover="changeImage(this)" src="https://down-ph.img.susercontent.com/file/bea7ef9db07f2bcd359d953a8f96fccd" onclick="btnClick('red')" class="red">Red</button>
     </div>
     <div>
       <button>Add to cart</button>
       <button>Buy Now</button>
+      <button onclick="showCart()">Show cart</button>
+      <p class="productEl"></p>
     </div>
     <div>
       <p>Quantity</p>
       <div>
       <p class="quantity">0</p>
-      <button onclick="decrement()">decrement</button>
+      <button onclick="decrement()" class="decrement">decrement</button>
       <button onclick="increment()">increment</button>
      </div>
     </div>
