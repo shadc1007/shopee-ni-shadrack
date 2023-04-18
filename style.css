@@ -102,8 +102,8 @@ main {
 }
 
 .img {
-    height: 82px;
-    width: 82px;
+    height: 87px;
+    width: 87px;
     object-fit: cover;
 }
 
@@ -129,4 +129,23 @@ main {
 .color {
     display: flex;
     gap: .4rem;
+}
+
+button {
+    padding: .2rem .7rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #fff;
+    border: 1px solid orangered;
+    color: orangered;
+}
+
+.btn-active {
+    background: #fff;
+    border: 1px solid orangered;
+    color: orangered;
 }
