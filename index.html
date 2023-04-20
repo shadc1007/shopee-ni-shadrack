@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
   <title>Playground</title>
 </head>
 <body>
@@ -34,15 +37,30 @@
 
   <div class="product">
     <h2>Apple Iphone 12</h2>
-    <h2>₱21,890 - ₱28,890</h2>
+    <div class="price-div">
+    <p class="priceoff">₱50,990 - ₱59,990</p>
+    <p class="price">₱39,890 - ₱48,890
+    </p>
+    <p class="price-tag-off">22% OFF</p>
+    </div>
     <div class="color">
-      <p>Color</p>
-      <button onmouseover="changeImage(this)" src="https://down-ph.img.susercontent.com/file/4eda37751f332552b7dff3ded575525e" onclick="btnClick('black')" class="black">Black</button>
-      <button onmouseover="changeImage(this)" src="https://down-ph.img.susercontent.com/file/ae765a6a0464cce22a774b738fc2d267" onclick="btnClick('blue')" class="blue">Blue</button>
-      <button onmouseover="changeImage(this)" src="https://down-ph.img.susercontent.com/file/fda85005e201ec1c9a2be21c777d4dec" onclick="btnClick('green')" class="green">Green</button>
-      <button onmouseover="changeImage(this)" src="https://down-ph.img.susercontent.com/file/dc84c2089c9f94c9072bce211f0fbada" onclick="btnClick('white')" class="white">White</button>
-      <button onmouseover="changeImage(this)" src="https://down-ph.img.susercontent.com/file/c3f6139836c33cee1f208abd48828910" onclick="btnClick('purple')" class="purple">Purple</button>
-      <button onmouseover="changeImage(this)" src="https://down-ph.img.susercontent.com/file/bea7ef9db07f2bcd359d953a8f96fccd" onclick="btnClick('red')" class="red">Red</button>
+      <p class="colortext">Color</p>
+      <div>
+      <button onmouseover="changeImage(this)" src="https://down-ph.img.susercontent.com/file/4eda37751f332552b7dff3ded575525e" onclick="btnClick('Black')" class="Black">Black</button>
+      <button onmouseover="changeImage(this)" src="https://down-ph.img.susercontent.com/file/ae765a6a0464cce22a774b738fc2d267" onclick="btnClick('Blue')" class="Blue">Blue</button>
+      <button onmouseover="changeImage(this)" src="https://down-ph.img.susercontent.com/file/fda85005e201ec1c9a2be21c777d4dec" onclick="btnClick('Green')" class="Green">Green</button>
+      <button onmouseover="changeImage(this)" src="https://down-ph.img.susercontent.com/file/dc84c2089c9f94c9072bce211f0fbada" onclick="btnClick('White')" class="White">White</button>
+      <button onmouseover="changeImage(this)" src="https://down-ph.img.susercontent.com/file/c3f6139836c33cee1f208abd48828910" onclick="btnClick('Purple')" class="Purple">Purple</button>
+      <button onmouseover="changeImage(this)" src="https://down-ph.img.susercontent.com/file/bea7ef9db07f2bcd359d953a8f96fccd" onclick="btnClick('Red')" class="Red">Red</button>
+      </div>
+    </div>
+    <div class="capacity">
+      <p class="capacitytext">Capacity</p>
+      <div>
+        <button onclick="btnCapacityClick('firstgb', '64GB')" class="firstgb">64GB</button>
+        <button onclick="btnCapacityClick('secondgb', '128GB')" class="secondgb">128GB</button>
+        <button onclick="btnCapacityClick('thirdgb', '256GB')" class="thirdgb">256GB</button>
+      </div>
     </div>
     <div>
       <button>Add to cart</button>
