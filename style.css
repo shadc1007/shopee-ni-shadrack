@@ -23,6 +23,7 @@ header {
     display: flex;
     align-items: center;
     gap: 2rem;
+    position: relative;
     
 }
 
@@ -132,13 +133,14 @@ main {
 
 }
 
-.color , .capacity {
+.color , .capacity, .quantityD {
     display: flex;
-    gap: 2.5rem;
+    gap: 4rem;
+    margin-bottom: 5rem;
     align-items: center;
 }
 
-.colortext, .capacitytext {
+.colortext, .capacitytext, .quantitytext {
     font-size: 1rem;
     color: rgb(121, 121, 121);
 }
@@ -195,4 +197,64 @@ button:hover {
     font-weight: bold;
     font-size: .6rem;
     padding: .1rem .3rem;
+}
+
+.cart {
+    cursor: pointer;
+    font-size: 1.3rem;
+}
+
+.quantityDiv {
+    display: flex;
+    color: gray;
+}
+
+.quantityDiv button {
+    font-size: 1.2rem;
+    padding: .2rem 1rem;
+}
+
+.quantityOutput {
+    padding: .2rem 1rem;
+}
+
+.cta-btn {
+    display: flex;
+    gap: 1rem;
+}
+
+.buyNow {
+    background: orangered;
+    padding: 1rem 1.5rem;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.addCart {
+    padding: 1rem 1.5rem;
+    color: orangered;
+    background: #fff;
+    border: 1px solid orangered;
+}
+
+.productEl {
+    position: absolute;
+    top: 65px;
+    right: 13%;
+    padding: .2rem .7rem;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: orangered;
+    background: #fff;
+    font-size: 1rem;
+}
+
+footer {
+    padding: .5rem;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    color: #fff;
+    background: orangered;
 }

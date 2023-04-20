@@ -1,11 +1,12 @@
+alert('currently not available on mobile devices -shadshad')
 
-let productEl = document.querySelector('.productEl')
-let count = 0;
-const counter = document.querySelector('.quantity')
+let productHover = document.querySelector('.productHover')
+let count = 1;
+const counter = document.querySelector('.quantityOutput')
 let product = {
-    name: 'Apple iphone 12',
-    color: 'blue',
-    capacity: '64gb',
+    name: 'Apple Iphone 12',
+    color: 'empty',
+    capacity: 'empty',
     quantity: count
 }  
 
@@ -78,13 +79,24 @@ const  decrement = () => {
     count--
     counter.innerHTML = count
     product.quantity = count
-
-    if(count < 0) {
-        counter.innerHTML = 'Cannot perform action. must be 1.'
+    
+    if(count <= 1) {
+        counter.innerHTML = 1
+        product.quantity = 1
         document.querySelector('.decrement').setAttribute('disabled', true)
     } 
 }
 
 const showCart = () => { 
-    productEl.innerHTML =`${product.name}, ${product.color}, ${product.capacity}, Quantity: ${product.quantity}`
+    productHover.classList.add('productEl')
+    productHover.innerHTML =`${product.name}, ${product.color}, ${product.capacity}, Quantity: ${product.quantity}`
+}
+
+const removeCart = () => {
+    productHover.classList.remove('productEl')
+    productHover.innerHTML = ''
+}
+
+const addToCart = () => {
+    alert('Sucessfully Added.')
 }

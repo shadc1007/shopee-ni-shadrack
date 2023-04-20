@@ -20,6 +20,9 @@
         <li>Help</li>
         <li>Sign Up</li>
         <li>Login</li>
+        <li>
+          <i class="fa-solid fa-cart-shopping cart" onmouseover="showCart()" onmouseout="removeCart()"></i>
+        </li>
       </ul>
     </nav>
   </header>
@@ -62,23 +65,27 @@
         <button onclick="btnCapacityClick('thirdgb', '256GB')" class="thirdgb">256GB</button>
       </div>
     </div>
-    <div>
-      <button>Add to cart</button>
-      <button>Buy Now</button>
-      <button onclick="showCart()">Show cart</button>
-      <p class="productEl"></p>
-    </div>
-    <div>
-      <p>Quantity</p>
-      <div>
-      <p class="quantity">0</p>
-      <button onclick="decrement()" class="decrement">decrement</button>
-      <button onclick="increment()">increment</button>
+    <div class="quantityD">
+      <p class="quantitytext">Quantity</p>
+      <div class="quantityDiv">
+      <button onclick="decrement()" class="decrement">-</button>
+      <p class="quantityOutput">1</p>
+      <button onclick="increment()">+</button>
      </div>
+    </div>
+    <div class="cta-btn">
+      <button class="addCart" onclick="addToCart()">
+        <i class="fa-solid fa-cart-shopping cart"></i>
+        Add to cart</button>
+      <button class="buyNow">Buy Now</button>
+      <p class="productHover"></p>
     </div>
   </div>
 </main>
 
+<footer>
+  shadrack mwa mwa
+</footer>
   <script src="app.js"></script>
 </body>
 </html>
