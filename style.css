@@ -2,15 +2,19 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
+body {
+    font-family: 'Poppins', sans-serif;
+}
 
 header {
     height: 100px;
     display: flex; 
     justify-content: space-between;
     align-items: center;
-    background: #d0011b;
+    background: #ee4d2d;
     color: #fff;
     padding: 0 13rem;
 }
@@ -101,6 +105,7 @@ main {
     border: none;
 }
 
+
 .img {
     height: 87px;
     width: 87px;
@@ -124,11 +129,18 @@ main {
 main {
     margin-top: 2rem;
     display: flex;
+
 }
 
-.color {
+.color , .capacity {
     display: flex;
-    gap: .4rem;
+    gap: 2.5rem;
+    align-items: center;
+}
+
+.colortext, .capacitytext {
+    font-size: 1rem;
+    color: rgb(121, 121, 121);
 }
 
 button {
@@ -136,6 +148,7 @@ button {
     border: none;
     outline: none;
     cursor: pointer;
+    font-size: .9rem;
 }
 
 button:hover {
@@ -148,4 +161,38 @@ button:hover {
     background: #fff;
     border: 1px solid orangered;
     color: orangered;
+}
+
+.btn-active-1 {
+    background: #fff;
+    border: 1px solid orangered;
+    color: orangered;
+}
+
+.price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: orangered;
+}
+
+.priceoff {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.price-div {
+    align-items: center;
+    gap: 1rem;
+    display: flex;
+    margin-top: 1rem;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+}
+
+.price-tag-off {
+    background: #ee4d2d;
+    color: white;
+    font-weight: bold;
+    font-size: .6rem;
+    padding: .1rem .3rem;
 }
